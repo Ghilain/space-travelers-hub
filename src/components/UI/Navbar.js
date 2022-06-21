@@ -4,13 +4,13 @@ const Navbar = () => (
   <nav className="nav">
     <ul className="nav-list">
       <li>
-        <NavLink to="/"> Rockets </NavLink>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}> Rockets </NavLink>
       </li>
       <li>
-        <NavLink to="/"> Missions </NavLink>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}> Missions </NavLink>
       </li>
       <li>
-        <NavLink to="/"> My Profile </NavLink>
+        <NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : '')}> My Profile </NavLink>
       </li>
     </ul>
   </nav>
