@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding-right: 1rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
