@@ -23,6 +23,11 @@
 
 a {
   text-decoration: none;
+  color: rgb(45, 131, 245);
+}
+
+.brand-name {
+  color: black;
 }
 
 ul {
