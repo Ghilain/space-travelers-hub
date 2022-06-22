@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/UI/Header';
-import Myprofile from './pages/myprofile';
+import Myprofile from './pages/Myprofile';
 import RocketPage from './pages/RocketPage';
 
 function App() {
