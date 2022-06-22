@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { reserve } from '../../../Redux/Rocket/rockets';
 import './rocket.css';
 
-function Rocket(props) {
+const Rocket = (props) => {
   const {
     title, description, img, active, id,
   } = props;
@@ -16,10 +16,10 @@ function Rocket(props) {
   return (
     <>
       <li className="detail">
-        <div className="rocket-item__image">
+        <div className="image-detail">
           <img src={img} alt={title} />
         </div>
-        <div>
+        <div className="text-shipdetails">
           <h2>{title}</h2>
           <p>
             {active && <span>Reserved</span>}
@@ -27,6 +27,7 @@ function Rocket(props) {
           </p>
           <button
             type="button"
+            className={active ? 'activated' : ''}
             onClick={() => handleReserve(id)}
           >
             {active ? 'Cancel Reservation' : 'Reserve Rocket'}
@@ -35,7 +36,7 @@ function Rocket(props) {
       </li>
     </>
   );
-}
+};
 
 export default Rocket;
 
