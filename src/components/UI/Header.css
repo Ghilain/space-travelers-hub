@@ -29,6 +29,10 @@ ul {
   list-style-type: none;
 }
 
+ul li {
+  padding: 02rem 0.7rem;
+}
+
 .active {
   text-decoration: underline;
 }
