@@ -14,7 +14,7 @@ const fetchMissions = (payload) => ({
 const missions = (state = initializeState, action) => {
   switch (action.type) {
     case FETCH_MISSIONS:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }
