@@ -29,7 +29,7 @@ const Mission = () => {
                 <span className="status">NOT A MEMBER </span>
               </td>
               <td>
-                <button type="button" className="join-button">JOIN MISSION</button>
+                <button type="button" className="mission-button">JOIN MISSION</button>
               </td>
             </tr>
           ))}

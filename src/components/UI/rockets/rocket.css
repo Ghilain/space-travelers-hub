@@ -10,7 +10,7 @@ img {
   height: 205px;
 }
 
-button {
+.rocket-button {
   background-color: rgb(45, 131, 245);
   color: white;
   border: none;

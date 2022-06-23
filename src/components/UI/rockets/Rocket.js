@@ -47,6 +47,7 @@ const Rocket = () => (
         </p>
         <button
           type="button"
+          className="rocket-button"
         >
           {/* {({ active }) => (active ? 'Cancel Reservation' : 'Reserve Rocket')} */}
           Reserve Rocket
@@ -65,6 +66,7 @@ const Rocket = () => (
         </p>
         <button
           type="button"
+          className="rocket-button"
         >
           {/* {({ active }) => (active ? 'Cancel Reservation' : 'Reserve Rocket')} */}
           Reserve Rocket
