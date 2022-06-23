@@ -1,43 +1,40 @@
-import axios from 'axios';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const url = 'https://api.spacexdata.com/v3/rockets';
 
-const FETCH_ROCKETS = 'spaceTravelers/missions/FETCH_ROCKETS';
+// const initialState = [];
 
-const initializeState = [];
-
-const fetchRockets = (payload) => ({
-  type: FETCH_ROCKETS,
-  payload,
+export const getRockets = createAsyncThunk('mission/fetchMission', async () => {
+  const response = await fetch(url);
+  const data = await response.json();
+  const rockets = data.map((rock) => (
+    {
+      id: rock.id,
+      rocket_name: rock.rocket_name,
+      description: rock.description,
+      img: rock.flickr_images[0],
+      active: false,
+    }
+  ));
+  return rockets;
 });
 
-const rocketss = (state = initializeState, action) => {
-  switch (action.type) {
-    case FETCH_ROCKETS:
-      return [...state, action.payload];
-    default:
-      return state;
-  }
-};
+const rocketsSlice = createSlice({
+  name: 'rockets',
+  initialState: [],
+  reducers: {
+    reserve: (state, action) => state.map((rocket) => {
+      if (rocket.id === action.payload) {
+        return { ...rocket, active: !rocket.active };
+      }
+      return rocket;
+    }),
+  },
+  extraReducers: {
+    [getRockets.fulfilled]: (state, action) => action.payload,
+  },
+});
 
-const fetchData = () => (dispatch) => {
-  axios
-    .get(url)
-    .then((response) => {
-      const { data } = response;
-      const payload = data.map((rocket) => ({
-        id: rocket.mission_id,
-        name: rocket.mission_name,
-        description: rocket.description,
-      }));
-      dispatch(fetchRockets(payload));
-    })
-    .catch((error) => {
-      /*eslint-disable*/
-      alert(error.message);
-    });
-};
+export const { reserve } = rocketsSlice.actions;
 
-export { fetchData };
-
-export default rocketss;
+export default rocketsSlice.reducer;
