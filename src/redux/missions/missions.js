@@ -33,6 +33,7 @@ const fetchData = () => (dispatch) => {
       dispatch(fetchMissions(payload));
     })
     .catch((error) => {
+      /*eslint-disable*/
       alert(error.message);
     });
 };

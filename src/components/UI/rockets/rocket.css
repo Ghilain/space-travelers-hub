@@ -1,0 +1,25 @@
+.detail {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.image-detail,
+img {
+  width: 205px;
+  margin-right: 20px;
+  height: 205px;
+}
+
+button {
+  background-color: rgb(45, 131, 245);
+  color: white;
+  border: none;
+  height: 30px;
+}
+
+.activated {
+  background-color: rgb(204, 206, 209);
+  color: rgb(0, 0, 0);
+  border: solid 0.5px;
+  height: 30px;
+}
