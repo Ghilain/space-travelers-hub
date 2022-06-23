@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/UI/Header';
 import Mission from './pages/Mission';
-import Myprofile from './pages/Myprofile';
+import Myprofile from './pages/myprofile';
 import RocketPage from './pages/RocketPage';
 
 function App() {
