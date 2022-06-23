@@ -1,0 +1,40 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+td,
+th {
+  border: 1px solid #828588;
+  padding: 0.5rem;
+}
+
+.table thead,
+tbody td:first-child {
+  font-weight: 700;
+}
+
+.table th {
+  padding: 1rem;
+}
+
+.status {
+  display: block;
+  background-color: #6d757d;
+  color: #fff;
+  border-radius: 7px;
+  white-space: nowrap;
+  padding: 0.2rem 0.5rem;
+}
+
+.join-button {
+  border: 1px solid #000;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 0.7rem 1.2rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
