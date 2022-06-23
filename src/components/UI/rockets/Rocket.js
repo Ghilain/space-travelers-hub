@@ -43,7 +43,7 @@ const Rocket = () => (
         <h2>Falcon 3</h2>
         <p>
           {/* {active && <span>Reserved</span>} */}
-          hfjbdchbcxcbccbxzcbhjcxhxchjcgscgsh
+          hfjbdchb cxcbccbxzc bhjcxhxchjcgscgsh
         </p>
         <button
           type="button"
@@ -61,7 +61,7 @@ const Rocket = () => (
         <h2>Falcon 3</h2>
         <p>
           {/* {active && <span>Reserved</span>} */}
-          hfjbdchbcxcbccbxzcbhjcxhxchjcgscgsh
+          hfjbdchbcxc bccbxzcbhjc xhxchjcgscgsh
         </p>
         <button
           type="button"
