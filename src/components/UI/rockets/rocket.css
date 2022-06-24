@@ -15,7 +15,7 @@ h2 {
   font-family: monospace;
 }
 
-button {
+.button {
   background-color: rgb(45, 131, 245);
   color: white;
   border: none;

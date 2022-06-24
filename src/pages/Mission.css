@@ -28,7 +28,7 @@ tbody td:first-child {
   padding: 0.2rem 0.5rem;
 }
 
-.join-button {
+.mission-button {
   border: 1px solid #000;
   border-radius: 5px;
   white-space: nowrap;
@@ -37,4 +37,12 @@ tbody td:first-child {
 
 tbody tr:nth-child(odd) {
   background-color: #f2f2f2;
+}
+
+.red {
+  border-color: red;
+}
+
+.member {
+  background-color: #18a2b8;
 }

@@ -27,7 +27,7 @@ const Rocket = (props) => {
           </p>
           <button
             type="button"
-            className={active ? 'activated' : ''}
+            className={active ? 'button activated' : 'button'}
             onClick={() => handleReserve(id)}
           >
             {active ? 'Cancel Reservation' : 'Reserve Rocket'}
