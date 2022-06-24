@@ -5,7 +5,7 @@ import { getRockets } from './redux/Rockets/rockets';
 import './App.css';
 import Header from './components/UI/Header';
 import Mission from './pages/Mission';
-import MyProfile from './pages/MyProfile.js';
+import MyProfile from './pages/MyProfile';
 import RocketPage from './pages/RocketPage';
 
 function App() {
