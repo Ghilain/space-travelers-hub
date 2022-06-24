@@ -1,20 +1,20 @@
 import missions, {
   joinMission,
   leaveMission,
-} from "../missions/missions";
+} from '../missions/missions';
 
-describe("Testing Mission state", () => {
-  test("should return the initial state", () => {
+describe('Testing Mission state', () => {
+  test('should return the initial state', () => {
     expect(missions(undefined, {})).toEqual([]);
   });
 
-  test(" fetch mission should return updated state with missions", () => {
+  test(' fetch mission should return updated state with missions', () => {
     const previousState = [];
     const payload = [
       {
         id: 1,
-        name: "Test mission",
-        description: "This is a test Mission",
+        name: 'Test mission',
+        description: 'This is a test Mission',
         reserved: false,
       },
     ];
@@ -25,47 +25,47 @@ describe("Testing Mission state", () => {
       [
         {
           id: 1,
-          name: "Test mission",
-          description: "This is a test Mission",
+          name: 'Test mission',
+          description: 'This is a test Mission',
           reserved: false,
         },
-      ]
+      ],
     );
   });
 
-  test("Join mission should update the reserved status of a mission to true", () => {
+  test('Join mission should update the reserved status of a mission to true', () => {
     const previousState = [
       {
         id: 1,
-        name: "Test mission",
-        description: "This is a test Mission",
+        name: 'Test mission',
+        description: 'This is a test Mission',
         reserved: false,
       },
     ];
     expect(missions(previousState, joinMission(1))).toEqual([
       {
         id: 1,
-        name: "Test mission",
-        description: "This is a test Mission",
+        name: 'Test mission',
+        description: 'This is a test Mission',
         reserved: true,
       },
     ]);
   });
 
-  test("Leave mission should update the reserved status of a mission to false", () => {
+  test('Leave mission should update the reserved status of a mission to false', () => {
     const previousState = [
       {
         id: 1,
-        name: "Test mission",
-        description: "This is a test Mission",
+        name: 'Test mission',
+        description: 'This is a test Mission',
         reserved: true,
       },
     ];
     expect(missions(previousState, leaveMission(1))).toEqual([
       {
         id: 1,
-        name: "Test mission",
-        description: "This is a test Mission",
+        name: 'Test mission',
+        description: 'This is a test Mission',
         reserved: false,
       },
     ]);
