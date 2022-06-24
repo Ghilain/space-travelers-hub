@@ -6,9 +6,9 @@ const Profile = () => {
   const rockets = useSelector((state) => state.rockets);
   const missions = useSelector((state) => state.missions);
   const rocketElement = rockets.map((rocket) => (
-    rocket.active === true ? <li className="rockets">{rocket.rocket_name}</li> : null));
+    rocket.active === true ? <li className="rockets" key={rocket.id}>{rocket.rocket_name}</li> : null));
   const missionElement = missions.map((mission) => (
-    mission.reserved === true ? <li className="missions">{mission.name}</li> : null));
+    mission.reserved === true ? <li className="missions" key={mission.id}>{mission.name}</li> : null));
 
   return (
     <div className="profileContainer">

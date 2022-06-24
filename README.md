@@ -1,5 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+
+## Preview
+
+<p align="center">Rocket Page</p>
+<img src="./src/assets/rocket-preview.png">
+
+<p align="center">Mission Page</p>
+
+<img src="./src/assets/mission-preview.png">
+
 # Space Travelers Hub
 
 Space Travelers Hub is web application for a company that provides commercial and scientific space travel services. Consists of Rockets, Missions, and the My Profile section. 
@@ -16,7 +26,6 @@ Space Travelers Hub is web application for a company that provides commercial an
 
 Live Demo [Space Travelers Hub](https://space-traveler-hubs.herokuapp.com/)
 =======
-### `npm test`
 
 ## Built With
 
@@ -46,6 +55,10 @@ Finally, start your development server by running:
 ```
 npm start
 ```
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.
 
 ## Author
 
