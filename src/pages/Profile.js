@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './MyProfile.css';
+import './Profile.css';
 
-const MyProfile = () => {
+const Profile = () => {
   const rockets = useSelector((state) => state.rockets);
   const missions = useSelector((state) => state.missions);
   const rocketElement = rockets.map((rocket) => (
@@ -28,4 +28,4 @@ const MyProfile = () => {
   );
 };
 
-export default MyProfile;
+export default Profile;

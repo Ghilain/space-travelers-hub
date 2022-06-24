@@ -5,7 +5,7 @@ import { getRockets } from './redux/Rockets/rockets';
 import './App.css';
 import Header from './components/UI/Header';
 import Mission from './pages/Mission';
-import MyProfile from './pages/MyProfile';
+import Profile from './pages/Profile';
 import RocketPage from './pages/RocketPage';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<RocketPage />} />
         <Route exact path="/mission" element={<Mission />} />
-        <Route exact path="/profile" element={<MyProfile />} />
+        <Route exact path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
