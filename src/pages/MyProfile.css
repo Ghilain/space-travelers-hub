@@ -1,0 +1,23 @@
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.rockets, .missions {
+  border: solid 0.5px hsl(240deg 8% 78%);
+}
+
+.active-list {
+  padding: 0;
+  margin: 0;
+}
+
+.active-list li {
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.profile-list {
+  width: 100%;
+}

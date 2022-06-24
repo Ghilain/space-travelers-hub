@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchData } from '../redux/missions/missions';
+import { fetchData, joinMission, leaveMission } from '../redux/missions/missions';
 import './Mission.css';
 
 const Mission = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchData());
+    if (!missions.length) dispatch(fetchData());
   }, []);
+
   return (
     <section>
       <table className="table">
@@ -26,10 +27,21 @@ const Mission = () => {
               <td>{item.name}</td>
               <td>{item.description}</td>
               <td>
-                <span className="status">NOT A MEMBER </span>
+                <span className={item.reserved ? 'status member' : 'status'}>
+                  {item.reserved ? 'ACTIVE MEMBER' : 'NOT A MEMBER'}
+                  {' '}
+                </span>
               </td>
               <td>
-                <button type="button" className="mission-button">JOIN MISSION</button>
+                {item.reserved ? (
+                  <button type="button" className="mission-button red" onClick={() => dispatch(leaveMission(item.id))}>
+                    LEAVE MISSION
+                  </button>
+                ) : (
+                  <button type="button" className="mission-button" onClick={() => dispatch(joinMission(item.id))}>
+                    JOIN MISSION
+                  </button>
+                )}
               </td>
             </tr>
           ))}
