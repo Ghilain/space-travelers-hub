@@ -9,6 +9,7 @@ const Navbar = () => (
       <li>
         <NavLink to="/mission" className={({ isActive }) => (isActive ? 'active' : '')}> Missions </NavLink>
       </li>
+      <div className="dividerNav" />
       <li>
         <NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : '')}> My Profile </NavLink>
       </li>

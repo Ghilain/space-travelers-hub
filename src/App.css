@@ -3,6 +3,6 @@
 }
 
 .divider {
-  border-top: solid 1px;
+  border-top: solid 1px hsl(240deg 8% 78%);
   margin-bottom: 20px;
 }
