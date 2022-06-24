@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import store from '../redux/ConfigureStore';
 import { Provider } from 'react-redux';
+import store from '../redux/ConfigureStore';
 import Missions from '../pages/Mission';
 
 const mission = [
