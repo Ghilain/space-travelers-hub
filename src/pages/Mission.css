@@ -42,6 +42,7 @@ tbody tr:nth-child(odd) {
 .red {
   border-color: red;
 }
+
 .member {
-  background-color: #18A2B8;
+  background-color: #18a2b8;
 }
