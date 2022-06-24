@@ -23,6 +23,13 @@
 
 a {
   text-decoration: none;
+  color: rgb(45, 131, 245);
+}
+
+.dividerNav {
+  border-right: solid 2px hsl(240deg 8% 78%);
+  height: 14px;
+  margin-top: 37px;
 }
 
 ul {

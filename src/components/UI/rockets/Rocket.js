@@ -22,7 +22,7 @@ const Rocket = (props) => {
         <div className="text-shipdetails">
           <h2>{title}</h2>
           <p>
-            {active && <span>Reserved</span>}
+            {active && <span className="reservedSign">Reserved</span>}
             {description}
           </p>
           <button

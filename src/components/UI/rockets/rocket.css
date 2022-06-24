@@ -21,11 +21,23 @@ button {
   border: none;
   height: 30px;
   font-family: monospace;
+  border-radius: 5px;
+}
+
+.reservedSign {
+  background-color: hsl(180deg 51% 52%);
+  color: white;
+  border: none;
+  padding: 1px 5px;
+  margin-right: 5px;
+  height: 30px;
+  font-family: monospace;
+  border-radius: 5px;
 }
 
 .activated {
-  background-color: rgb(204, 206, 209);
-  color: rgb(0, 0, 0);
-  border: solid 0.5px;
+  background-color: rgb(255, 255, 255);
+  color: hsl(240deg 8% 78%);
+  border: solid 0.5px hsl(240deg 8% 78%);
   height: 30px;
 }
