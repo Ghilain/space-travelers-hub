@@ -14,9 +14,9 @@ Space Travelers Hub is web application for a company that provides commercial an
 - Leave a Joined mission.
 - See reserved rockets and joined mission check `My Profile` tab.
 
-## Demo App
-
 Live Demo [Space Travelers Hub](https://space-traveler-hubs.herokuapp.com/)
+=======
+### `npm test`
 
 ## Built With
 
@@ -38,8 +38,8 @@ Next, switch inside the project directory and run:
 ```
 npm install
 ```
-
 This will install all the necessary dependencies in the local `node_modules` folder.
+=======
 
 Finally, start your development server by running:
 
